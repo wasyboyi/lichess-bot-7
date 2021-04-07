@@ -27,8 +27,6 @@ engine:                      # engine settings
     Move Overhead: 125        # increase if your bot flags games too often
     Threads: 4                # max CPU threads the engine can use
     Hash:  16                # max memory (in megabytes) the engine can allocate
-    option name MultiPV type spin : 1
-option name Skill Level type spin : 20
     EvalFile: nn-62ef826d1a6d.nnue  # nnue evaluation file name here
     Use NNUE: true           # To Enable NNUE EVAL
 #   go_commands:              # additional options to pass to the UCI go command
