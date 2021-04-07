@@ -11,7 +11,9 @@ engine:                      # engine settings
     book:
       standard:              # list of book file paths for variant standard
         - Perfect2021.bin
-        - Cerebellum3Merge.bin 
+        - Cerebellum3Merge.bin
+        - Elo3300.bin
+        - komodo.bin
 #      atomic:               # list of book file paths for variant atomic
 #        - engines/atomicbook1.bin
 #        - engines/atomicbook2.bin
@@ -23,10 +25,10 @@ engine:                      # engine settings
 # engine_options:             # any custom command line params to pass to the engine
 #   cpuct: 3.1
   uci_options:                # arbitrary UCI options passed to the engine
-    Move Overhead: 100        # increase if your bot flags games too often
-    Threads: 10                # max CPU threads the engine can use
+    Move Overhead: 1000        # increase if your bot flags games too often
+    Threads: 12                # max CPU threads the engine can use
     Hash:  128                 # max memory (in megabytes) the engine can allocate
-    EvalFile: nn-a9f9e868162a.nnue # nnue evaluation file name here
+    EvalFile:nn-62ef826d1a6d.nnue  # nnue evaluation file name here
     Use NNUE: true           # To Enable NNUE EVAL
 #   go_commands:              # additional options to pass to the UCI go command
 #     nodes: 1                # Search so many nodes only.
